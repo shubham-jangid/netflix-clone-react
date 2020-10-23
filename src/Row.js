@@ -15,14 +15,13 @@ function Row({ titile, fetchUrl, isLargeRow }) {
     }
     fetchData();
   }, [fetchUrl]);
+  console.log(movies);
 
   return (
     <div className="row">
       <h2> {titile}</h2>
       <div className="row__posters">
         {movies.map((movie) => {
-          console.log(movie);
-
           return (
             <img
               key={`${movie.id}`}

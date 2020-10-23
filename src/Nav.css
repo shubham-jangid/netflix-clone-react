@@ -1,0 +1,26 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  height: 30px;
+  width: 100%;
+}
+.nav__logo {
+  width: 80px;
+  object-fit: contain;
+  position: fixed;
+  left: 20px;
+}
+
+.blackNav {
+  background-color: #111;
+  transition: ease-in 0.2s;
+}
+.nav__profileIcon {
+  width: 40px;
+  object-fit: contain;
+  position: fixed;
+  right: 20px;
+}
