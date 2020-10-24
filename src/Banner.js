@@ -23,7 +23,7 @@ function Banner({ fetchUrl }) {
       return response;
     }
     fetchdata();
-  }, []);
+  }, [fetchUrl]);
 
   return (
     <div
