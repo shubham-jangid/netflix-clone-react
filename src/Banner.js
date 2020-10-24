@@ -4,6 +4,7 @@ import "./Banner.css";
 
 function Banner({ fetchUrl }) {
   const [movies, setMovies] = useState([0]);
+
   function truncate(str, noOfCharacter) {
     return str?.length > noOfCharacter
       ? str.slice(0, noOfCharacter - 1) + "..."
@@ -13,6 +14,7 @@ function Banner({ fetchUrl }) {
   useEffect(() => {
     async function fetchdata() {
       const response = await axios.get(fetchUrl);
+
       setMovies(
         response.data.results[
           Math.floor(Math.random() * response.data.results.length)
@@ -20,6 +22,7 @@ function Banner({ fetchUrl }) {
       );
       return response;
     }
+    fetchdata();
   }, []);
 
   return (
@@ -27,7 +30,7 @@ function Banner({ fetchUrl }) {
       className="banner"
       style={{
         backgroundSize: "cover",
-        backgroundImage: `url("https://image.tmdb.org/t/p/original/${movies?.backdrop_path}")`,
+        backgroundImage: `url("https://image.tmdb.org/t/p/original/${movies.backdrop_path}")`,
         backgroundPosition: `center `,
       }}
     >
