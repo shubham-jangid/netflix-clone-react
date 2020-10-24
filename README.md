@@ -1,4 +1,10 @@
-Live demo [Create React App](https://github.com/facebook/create-react-app).
+Live demo [https://netflix.shubhamjangid.in/](https://netflix.shubhamjangid.in/).
+
+### `Sample images`
+
+![image 1](./sampleImages/image1.png)
+![image 1](./sampleImages/image2.png)
+![image 1](./sampleImages/image3.png)
 
 ## Available Scripts
 

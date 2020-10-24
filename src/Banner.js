@@ -40,7 +40,9 @@ function Banner({ fetchUrl }) {
           <button className="banner__button">Play</button>
           <button className="banner__button">My List</button>
         </div>
-        <p className="banner__description"> {truncate(movies.overview, 250)}</p>
+        <div className="banner__description">
+          <p> {truncate(movies.overview, 120)}</p>
+        </div>
       </div>
       <div className="banner--bottom--transition"></div>
     </div>
